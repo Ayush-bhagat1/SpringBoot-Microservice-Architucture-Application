@@ -3,6 +3,7 @@ import com.example.order_service.model.Order;
 import com.example.order_service.model.OrderLineItems;
 import com.example.order_service.repository.OrderRepository;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 import com.example.order_service.dto.OrderLineItemsDto;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class OrderService {
 
     private final OrderRepository orderRepository;
