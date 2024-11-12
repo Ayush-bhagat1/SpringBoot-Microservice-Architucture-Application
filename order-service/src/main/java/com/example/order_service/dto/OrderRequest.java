@@ -3,6 +3,7 @@ package com.example.order_service.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.util.*;
 
 @Data
@@ -10,7 +11,5 @@ import java.util.*;
 @NoArgsConstructor
 public class OrderRequest {
 
-    private List<OrderLineItemsDto> orderLinedDtoList;
-
-
+    private List<OrderLineItemsDto> orderLinedDtoList = new ArrayList<>(); // Initialize with empty list
 }
